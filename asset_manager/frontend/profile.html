@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Asset Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-100 text-zinc-900">
+    <div class="min-h-screen md:flex">
+        <aside class="bg-zinc-950 text-white md:w-64">
+            <div class="border-b border-zinc-800 p-5">
+                <h1 class="text-lg font-bold">Asset Manager</h1>
+                <p id="roleLabel" class="mt-1 text-sm text-zinc-400"></p>
+            </div>
+            <nav class="grid gap-1 p-3 text-sm">
+                <a class="rounded-md px-3 py-2 text-zinc-300 hover:bg-zinc-800 hover:text-white" href="dashboard.html">Dashboard</a>
+                <a class="rounded-md px-3 py-2 text-zinc-300 hover:bg-zinc-800 hover:text-white" href="employees.html">Employees</a>
+                <a class="rounded-md px-3 py-2 text-zinc-300 hover:bg-zinc-800 hover:text-white" href="assets.html">Assets</a>
+                <a class="rounded-md px-3 py-2 text-zinc-300 hover:bg-zinc-800 hover:text-white" href="assignments.html">Assignments</a>
+                <a class="rounded-md bg-zinc-800 px-3 py-2 font-medium" href="profile.html">Profile</a>
+                <button class="rounded-md px-3 py-2 text-left text-zinc-300 hover:bg-zinc-800 hover:text-white" onclick="logout()">Logout</button>
+            </nav>
+        </aside>
+
+        <div class="flex min-h-screen flex-1 flex-col">
+            <header class="flex items-center justify-between border-b border-zinc-200 bg-white px-6 py-4">
+                <div>
+                    <p class="text-sm text-zinc-500">Account</p>
+                    <h2 class="text-xl font-semibold">Profile</h2>
+                </div>
+                <div class="text-right text-sm">
+                    <p id="profileLabel" class="font-medium"></p>
+                    <p class="text-zinc-500">Signed in</p>
+                </div>
+            </header>
+
+            <main class="flex-1 p-6">
+                <section class="max-w-xl rounded-lg bg-white p-6 shadow-sm ring-1 ring-zinc-200">
+                    <h3 class="font-semibold">User Details</h3>
+                    <dl class="mt-5 grid gap-4 text-sm">
+                        <div class="flex items-center justify-between border-b border-zinc-100 pb-3">
+                            <dt class="text-zinc-500">Username</dt>
+                            <dd id="profileUsername" class="font-medium"></dd>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <dt class="text-zinc-500">Role</dt>
+                            <dd id="profileRole" class="font-medium"></dd>
+                        </div>
+                    </dl>
+                </section>
+            </main>
+
+            <footer class="border-t border-zinc-200 bg-white px-6 py-3 text-sm text-zinc-500">
+                Asset Management System
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

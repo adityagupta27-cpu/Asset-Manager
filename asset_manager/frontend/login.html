@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Asset Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-zinc-100 text-zinc-900">
+    <main class="flex min-h-screen items-center justify-center px-4">
+        <section class="w-full max-w-md rounded-lg bg-white p-8 shadow-sm ring-1 ring-zinc-200">
+            <div class="mb-8">
+                <p class="text-sm font-semibold uppercase tracking-wide text-sky-700">Asset Management System</p>
+                <h1 class="mt-2 text-2xl font-bold">Sign in</h1>
+            </div>
+
+            <form id="loginForm" class="space-y-5">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-zinc-700">Username</label>
+                    <input id="username" type="text" autocomplete="username" required class="mt-2 w-full rounded-md border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-100">
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-zinc-700">Password</label>
+                    <input id="password" type="password" autocomplete="current-password" required class="mt-2 w-full rounded-md border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-100">
+                </div>
+
+                <p id="loginMessage" class="min-h-5 text-sm text-red-600"></p>
+
+                <button class="w-full rounded-md bg-sky-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-sky-800" type="submit">Login</button>
+            </form>
+
+            <div class="mt-6 rounded-md bg-zinc-50 p-4 text-sm text-zinc-600">
+                <p><span class="font-medium text-zinc-800">Admin:</span> admin / admin123</p>
+                <p class="mt-1"><span class="font-medium text-zinc-800">User:</span> user / user123</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
